@@ -1,0 +1,26 @@
+\documentclass[main.tex]{subfile}
+
+\begin{document}
+	\section{Актуальність проблеми}
+	 План:
+	 \begin{enumerate}
+	 	\item Застосування в оптимізації: опуклі недиференційовні функції, субградієнт, , необхідна умова екстремуму.
+	 	\item Приклади задач:
+	 	   \begin{itemize}
+	 	   	\item мінімізація математичного сподівання 
+	 	   	\item Мінімізація суми функцій: $f_1 + f_2 \rightarrow \min$, тоді необхідна умова екстремуму має вигляд $0 \in (\partial f_1 + \partial f_2 )(x)$. Якщо другий доданок має спеціальний вигляд, це дозволяє застосовувати кращі алгоритми.
+	 	   \end{itemize} 
+	 	\item Де виникає $0 \in (A + B)(x)$
+	 	 \begin{enumerate} 
+	 	 	\item Умовний естремум: $f \rightarrow \min_C$. Необхідна умова: $0 \in \partial f(x) + N_C x$
+	 	 	\item Пошук сідлової точки функції Лагранжа: 
+	 	 	      $0 \in 
+	 	 	      \begin{pmatrix}
+	 	 	      	\nabla_1 L(x, y) \\
+	 	 	      	-\nabla_2 L(x, y) \\
+	 	 	      \end{pmatrix}
+ 	 	          + N_{C \times D}(x, y)$
+	 	 \end{enumerate}
+ 	 \item Застосування в машинному навчанні \texttt{https://arxiv.org/pdf/1403.5074.pdf}. Розподілені обчислення, федеративне навчання, stochastic gradient descend. 
+	 \end{enumerate}
+\end{document}

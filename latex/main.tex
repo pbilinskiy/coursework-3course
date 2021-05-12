@@ -1,0 +1,98 @@
+% cls && pdflatex lab-2-report.tex && cls && pdflatex lab-2-report.tex && start lab-2-report.pdf
+\documentclass[12pt]{article}
+%\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,ukrainian]{babel}
+\usepackage{amsmath, amssymb}
+
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Sharelatex Example}
+}
+\usepackage[all]{hypcap} 
+\usepackage{tcolorbox}
+\usepackage{subfiles}
+
+\usepackage[top = 2 cm, left = 1 cm, right = 1 cm, bottom = 2 cm]{geometry}
+
+\usepackage{float, graphicx}
+\usepackage{amsthm}
+
+\usepackage{mathtools}
+
+\graphicspath{ {./} }
+
+\newtheorem{theorem}{Теорема}
+\newtheorem{proposition}{Твердження}
+\newtheorem{corollary}{Наслідок}
+\newtheorem{observation}{Спостереження}
+
+\newcommand{\Min}{\displaystyle\min\limits}
+\newcommand{\Max}{\displaystyle\max\limits}
+\newcommand{\Sup}{\displaystyle\sup\limits}
+\newcommand{\Sum}{\displaystyle\sum\limits}
+\newcommand{\expnumber}[2]{{#1}\mathrm{e}{#2}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Hil}{\mathcal{H}}
+\newcommand{\Res}[1]{J_{#1}}
+\newcommand{\Int}{\int_{-a}^{a}}
+
+
+
+\DeclarePairedDelimiterX{\inp}[2]{\big \langle}{\big \rangle}{#1| #2}
+
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{-1cm}
+			{\Large Київський національний університет імені Тараса Шевченка \\ 
+				Факультет комп'ютерних наук та кібернетики \\}	
+			\vspace*{6cm}
+			{\huge Рандомізована паралельна декомпозиція для розв'язання операторних включень
+				\vfill
+			}	
+			
+		\end{center}
+		\begin{flushright}
+			{\Large
+				Виконав: \\
+				Білінський Павло \\
+				%\vspace{0.3cm}
+				3 курс \\
+				Кафедра Обчислювальної математики \\ 
+				\vspace{0.5cm}
+				Науковий керівник: \\
+				Семенов Володимир Вікторович
+			}
+		\end{flushright}
+		\begin{center}
+			\Large
+			\today
+		\end{center}
+	\end{titlepage}
+	
+	
+	\tableofcontents
+	\addtocontents{toc}{\protect \hypertarget{toc}{}}
+	
+	
+	
+	\subfile{task_setting}
+	\subfile{motivation}
+	
+	\subfile{bianchi_ergodic}
+	\subfile{stochastic_projected_gradient}
+	
+	\subfile{appendix}
+	\subfile{bibliography}
+	
+
+	
+
+\end{document}

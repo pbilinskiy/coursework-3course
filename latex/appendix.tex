@@ -1,0 +1,19 @@
+\documentclass[main.tex]{subfile}
+
+
+\begin{document}
+	\appendix
+	\section{Основні визначення та позначення}
+    \begin{itemize}
+    	\item $\Hil$ - гільбертовий простір зі скалярним добутком  $\inp{\cdot}{\cdot}$ та нормою $\|\cdot\|_2$.
+    	\item {\itshape Субдиференціал} опуклої функції $f(x)$ в точці $x$ - це множина \newline $\partial f(x) := \{x \in \Hil \mid  \forall y \in \Hil \ \inp{y-x}{f(y)-f(x)} \geq 0\}$. Субдиференціалом також називається відповідне багатозначне відображення. 
+    	
+    	{\itshape Субградієнтом} називається будь-який елемент цієї множини.
+    	
+    	\item $\Gamma_0(\Hil)$ - множина власних (proper) напівнеперервних знизу функцій з $\Hil$ в $(-\infty, \infty]$.
+    	
+    	\item {\itshape Проксимальний оператор} $prox_f(x) := \arg \min_{y \in \Hil} \{f(y) + \frac{1}{2}\|y-x\|_2^2\}$, де $f \in \Gamma_0(\Hil)$. 
+    	
+    	\item {\itshape Оператор проектування на множину } $P_C := \arg \min_{y \in C} \|x - y\|^2$. Якщо $C$ - непорожня, замкнена та опукла множина, то для кожного $x \in \Hil$ існує єдина проекція $P_C(x)$. 
+    \end{itemize}
+\end{document}
